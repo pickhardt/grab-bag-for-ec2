@@ -1,0 +1,16 @@
+{
+  "The raid array": {
+    "path": "/mnt/raid",
+    "hourly": 4,
+    "weekly": 6,
+    "monthly": 5,
+    "description": "Additional info to add to the description."
+  },
+  "Some mounted volume": {
+    "path": "/home/ec2-user/mydirectory",
+    "hourly": 2,
+    "daily": 3
+    "before_commands": ["echo before > /home/ec2-user/commands.txt"],
+    "after_commands": ["echo after >> /home/ec2-user/commands.txt", "echo after2 > /home/ec2-user/after2.txt"]
+  }
+}
